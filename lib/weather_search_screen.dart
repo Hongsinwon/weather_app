@@ -36,7 +36,7 @@ class _WeatherSearchScreenState extends State<WeatherSearchScreen> {
   }
 
   void _searchAddress(String value) async {
-    const key = 'df37cacb011f29e6c0c23798b26c40c3';
+    const key = '';
     final url = Uri.parse(
         'https://dapi.kakao.com/v2/local/search/address.json?query=$value&page=1&size=15&analyze_type=similar');
     final response =
