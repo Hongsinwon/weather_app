@@ -64,7 +64,7 @@ class _WeatherHomeScreenState extends State<WeatherHomeScreen> {
 
   Future<List<dynamic>> getLocation() async {
     //dotenv.env['googleMapApiKey']
-    const key = 'AIzaSyBSnh5dYU3gy7Ol1XeAFmZhIwgA5ucek4Y';
+    const key = '';
 
     final url = Uri.parse(
         'https://maps.googleapis.com/maps/api/geocode/json?latlng=$latitude,$longitude&key=$key&language=ko');
@@ -77,7 +77,7 @@ class _WeatherHomeScreenState extends State<WeatherHomeScreen> {
 
   Future<Weather> getWeather() async {
     //dotenv.env['openWeatherApiKey']
-    const key = '7bb9e553479391c5d2eee3f9647cbdc3';
+    const key = '';
 
     final url = Uri.parse(
         'https://api.openweathermap.org/data/2.5/weather?lat=$latitude&lon=$longitude&appid=$key');
